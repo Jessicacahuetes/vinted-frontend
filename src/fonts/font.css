@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Maison Neue Book';
+    src: url('MaisonNeue-Book.eot');
+    src: url('MaisonNeue-Book.eot?#iefix') format('embedded-opentype'),
+        url('MaisonNeue-Book.woff2') format('woff2'),
+        url('MaisonNeue-Book.woff') format('woff'),
+        url('MaisonNeue-Book.svg#MaisonNeue-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url('MaisonNeue-Bold.eot');
+    src: url('MaisonNeue-Bold.eot?#iefix') format('embedded-opentype'),
+        url('MaisonNeue-Bold.woff2') format('woff2'),
+        url('MaisonNeue-Bold.woff') format('woff'),
+        url('MaisonNeue-Bold.svg#MaisonNeue-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url('MaisonNeue-Light.eot');
+    src: url('MaisonNeue-Light.eot?#iefix') format('embedded-opentype'),
+        url('MaisonNeue-Light.woff2') format('woff2'),
+        url('MaisonNeue-Light.woff') format('woff'),
+        url('MaisonNeue-Light.svg#MaisonNeue-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url('MaisonNeue-Mono.eot');
+    src: url('MaisonNeue-Mono.eot?#iefix') format('embedded-opentype'),
+        url('MaisonNeue-Mono.woff2') format('woff2'),
+        url('MaisonNeue-Mono.woff') format('woff'),
+        url('MaisonNeue-Mono.svg#MaisonNeue-Mono') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

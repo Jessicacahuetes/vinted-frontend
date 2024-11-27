@@ -1,0 +1,572 @@
+* {
+  box-sizing: border-box;
+  font-family: "Maison Neue Book", sans-serif;
+}
+
+/* --------------------------------------------------------------
+----------------------------HEADER STYLES------------------------
+----------------------------------------------------------------*/
+
+.header-container {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  height: 60px;
+}
+
+header {
+  background-color: white;
+  max-width: 100vw;
+}
+
+.header-container a > img {
+  height: 30px;
+  display: block;
+}
+
+header button {
+  height: 30px;
+  width: 115px;
+  border: 1px solid #2cb1ba;
+  border-radius: 5px;
+  font-family: "Maison Neue Book";
+  color: #2cb1ba;
+  font-size: 12px;
+  outline: none;
+}
+
+.signup-login .signup,
+.login {
+  background-color: #fff;
+  color: #2cb1ba;
+}
+
+.signup {
+  margin-right: 20px;
+}
+
+.signup-login .signup:hover,
+.login:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.sell {
+  background-color: #2cb1ba;
+  color: #fff;
+  border: none;
+}
+
+.logout {
+  background-color: #c2175c;
+  color: #fff;
+}
+
+.header-container .search-bar {
+  position: relative;
+}
+.search-bar > input {
+  width: 590px;
+  padding-left: 40px;
+  background-color: #f5f6f7;
+  border-radius: 5px;
+  height: 37px;
+  border: none;
+  outline: none;
+  font-family: "Maison Neue Book";
+  font-size: 16px;
+}
+.search-bar > input .placeholder {
+  color: #bbb;
+}
+
+.search-bar .search-icon {
+  position: absolute;
+  left: 7px;
+  top: 10px;
+  color: #bbb;
+  font-size: 16px;
+}
+
+/* --------------------------------------------------------------
+------------------------------HOME-------------------------------
+----------------------------------------------------------------*/
+
+main {
+  background-color: #fff;
+  height: 100vh;
+}
+
+main a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1280px;
+  margin: auto;
+}
+
+.bg-hero {
+  background-image: url("/src/img/hero.jpg");
+  height: 490px;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.bg-hero img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 80px;
+  pointer-events: none;
+}
+
+.cta {
+  height: 220px;
+  width: 360px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 3px;
+  font-size: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 90px;
+  box-shadow: 0 0 2px #1111113d;
+}
+.cta button {
+  height: 45px;
+  width: 187px;
+  background-color: #2baeb7;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  padding: 0 14px;
+  margin-top: 32px;
+}
+
+.container h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  margin: 30px 0;
+}
+
+.card-container {
+  width: 1280px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px auto auto;
+}
+
+.card-content {
+  width: 235px;
+  padding: 0 6px 16px;
+  cursor: pointer;
+  margin: 0 6px;
+}
+
+.card-user {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.card-user img {
+  height: 25px;
+  width: 25px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.card-user span {
+  color: #999;
+  font-size: 12px;
+}
+
+.card-content > img {
+  height: 360px;
+  width: 235px;
+}
+
+.product-info p {
+  font-size: 14px;
+  color: black;
+}
+
+.product-info div p {
+  font-size: 12px;
+  color: #999;
+}
+
+.product-info {
+  padding: 8px;
+}
+
+/* -------------------------------------------------------------
+-----------------------------OFFER------------------------------
+---------------------------------------------------------------*/
+
+.offer-container {
+  min-height: calc(100vh - 60px);
+  background-color: #ebedee;
+}
+.offer {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  gap: 30px;
+}
+
+.col1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.col1 img {
+  height: 600px;
+  object-fit: cover;
+}
+.col2 {
+  width: 50%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-info {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 100%;
+  padding: 50px 50px;
+  justify-content: space-between;
+}
+.content-top p {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.offer-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.offer-list span {
+  flex: 1;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.offer-list span:first-child {
+  color: #999;
+}
+
+.offer-list span:last-child {
+  color: #666;
+  font-weight: 700;
+  text-align: left;
+}
+
+.divider {
+  border-bottom: 1px solid lightgray;
+}
+
+.content-bottom {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.content-bottom p:first-child {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.content-bottom p:nth-child(2) {
+  color: #666;
+  font-weight: 400;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+}
+.user-info img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.content-bottom button {
+  color: #fff;
+  background: #09b1ba;
+  border: solid 1px #09b1ba;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 16px;
+  height: 36px;
+  padding: 0 16px;
+  line-height: 36px;
+  margin-top: 32px;
+}
+
+/* ---------------------------------------------------------------
+---------------------------SIGNUP & LOGIN-------------------------
+-----------------------------------------------------------------*/
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Maison Neue Book", sans-serif;
+  margin: 20px 0;
+}
+
+.signup-form {
+  display: flex;
+  width: 275px;
+  margin: auto;
+  flex-direction: column;
+}
+
+.signup-form > input {
+  border: none;
+  border-bottom: 1px solid #fcced3;
+  height: 35px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.checkbox-container {
+  margin-top: 20px;
+  padding: 10px;
+  font-family: "Maison Neue Book", sans-serif;
+}
+
+.signup-form input[type="checkbox"] {
+  transform: scale(2);
+  margin-right: 20px;
+}
+
+.checkbox-container > div {
+  display: flex;
+}
+
+.checkbox-container span {
+  color: #666;
+}
+
+.checkbox-container p {
+  text-align: left;
+  color: #999;
+  font-size: 12px;
+  margin: 12px 0;
+}
+
+.signup-form button {
+  background-color: #2cb1ba;
+  height: 45px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.signup-form a,
+.signup-container a {
+  color: #2cb1ba;
+  font-size: 12px;
+  font-family: "Maison Neue Book", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+/*---------------------------------------------------------------
+------------------------------PUBLISH----------------------------
+----------------------------------------------------------------*/
+
+.publish-main {
+  background-color: #ebedee;
+  height: 100%;
+}
+
+.publish-container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.publish-main h2 {
+  font-size: 24px;
+  font-family: "Maison Neue Book", sans-serif;
+  padding-top: 40px;
+}
+
+.publish-container form {
+  display: block;
+}
+
+.file-upload {
+  background-color: #fff;
+  padding: 24px;
+  margin: 20px 0;
+  box-shadow: 0 0 2px gray;
+}
+.image-preview {
+  display: flex;
+  justify-content: center;
+}
+.image-preview img {
+  width: 600px;
+}
+.dashed-preview-image {
+  border: 1px #ebedee dashed;
+  border-radius: 3px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashed-preview-image label {
+  cursor: pointer;
+  color: #0ab1ba;
+  font-weight: 700;
+}
+
+.upload-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #0ab1ba;
+  border-radius: 4px;
+  height: 45px;
+  width: 200px;
+}
+.label-picture {
+  cursor: pointer;
+  color: #0ab1ba;
+  font-weight: 700;
+}
+.label-picture > span {
+  margin: 0 10px;
+  vertical-align: middle;
+}
+.upload-sign {
+  font-size: 40px;
+}
+.input-file {
+  display: none;
+}
+.input-section {
+  background-color: #fff;
+  margin: 20px 0;
+  box-shadow: 0 0 2px gray;
+}
+.input-section > .text-input:not(:last-child) {
+  border-bottom: 1px solid #ebedee;
+  vertical-align: center;
+}
+.text-input {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+.text-input > label {
+  font-weight: 400;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+.text-input > input {
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid #ebedee;
+  color: #000;
+  font-family: "Maison Neue Book", sans-serif;
+  font-size: 16px;
+}
+
+.text-input > textarea {
+  width: 50%;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid #ebedee;
+  outline: none;
+  color: #000;
+  font-family: "Maison Neue Book", sans-serif;
+  font-size: 16px;
+}
+
+.checkbox-section {
+  width: 50%;
+}
+
+.checkbox-section > input {
+  border: none;
+  border-bottom: 1px solid #ebedee;
+  color: #000;
+  font-family: "Maison Neue Book", sans-serif;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.checkbox-input {
+  display: block;
+}
+
+.checkbox-design {
+  border-radius: 3px;
+  padding: 2px 11px;
+  margin: 0 15px 0 0;
+  border: 1px solid black;
+}
+
+.checkbox-input > input {
+  display: none;
+}
+
+.form-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.validation {
+  background-color: #0ab1ba;
+  color: #fff;
+  border: none;
+  font: inherit;
+  outline: inherit;
+  border-radius: 4px;
+  padding: 12px;
+  margin: 50px 0;
+}
