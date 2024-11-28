@@ -29,32 +29,46 @@ const Offer = () => {
       ) : (
         <div className="offer">
           <div className="col1">
-            <img src={data.product_image.secure_url} alt="product picture" />
+            <img
+              src={data?.product_image?.secure_url || ""}
+              alt={data?.product_name || "product picture"}
+            />
           </div>
           <div className="col2">
             <div className="content-info">
               <div className="content-top">
-                <p>{data.product_price.toFixed(2)} €</p>
-                {data.product_details.map((detail, index) => {
-                  const keysInObj = Object.keys(detail);
-                  const keyInObj = keysInObj[0];
-                  return (
-                    <div className="offer-list" key={index}>
-                      <span>{keyInObj}</span>
-                      <span>{detail[keyInObj]}</span>
-                    </div>
-                  );
-                })}
+                <p>
+                  {data?.product_price
+                    ? `${data.product_price.toFixed(2)} €`
+                    : ""}{" "}
+                  €
+                </p>
+                {data?.product_details?.length > 0 ? (
+                  data.product_details.map((detail, index) => {
+                    const keysInObj = Object.keys(detail);
+                    const keyInObj = keysInObj[0];
+                    return (
+                      <div className="offer-list" key={index}>
+                        <span>{keyInObj}</span>
+                        <span>{detail[keyInObj]}</span>
+                      </div>
+                    );
+                  })
+                ) : (
+                  <p>Aucun détail disponible</p>
+                )}
               </div>
               <div className="divider"></div>
               <div className="content-bottom">
-                <p>{data.product_name}</p>
-                <p>{data.product_description}</p>
+                <p>{data?.product_name || ""}</p>
+                {data?.product_description && <p>{data.product_description}</p>}
                 <div className="user-info">
-                  <img
-                    src={data.user.account.avatar.secure_url}
-                    alt="user's avatar"
-                  />
+                  {data?.user?.account?.avatar?.secure_url && (
+                    <img
+                      src={data.user.account.avatar.secure_url}
+                      alt="user's avatar"
+                    />
+                  )}
                   <p>{data.user.account.username}</p>
                 </div>
                 <button>Acheter</button>
