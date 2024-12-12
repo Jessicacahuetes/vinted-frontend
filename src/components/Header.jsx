@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { IoSearch } from "react-icons/io5";
 import LogoVinted from "../img/logo-vinted.png";
-const Header = ({ token, handleConnexionStatus }) => {
+const Header = ({ token, handleConnexionStatus, title, setTitle }) => {
   const navigate = useNavigate();
 
   return (
@@ -12,7 +12,14 @@ const Header = ({ token, handleConnexionStatus }) => {
         </Link>
         <div className="search-bar">
           <IoSearch className="search-icon" />
-          <input type="text" placeholder="Rechercher des articles" />
+          <input
+            type="text"
+            placeholder="Rechercher des articles"
+            value={title}
+            onChange={(event) => {
+              setTitle(event.target.value);
+            }}
+          />
         </div>
         {token ? (
           <button
